@@ -487,8 +487,8 @@ do
         Library.Theme.Saturation = Utility.AddImage("Abyss/Assets/UI/Saturation.png", "https://raw.githubusercontent.com/mvonwalk/Exterium/main/SaturationPicker.png")
         Library.Theme.SaturationCursor = Utility.AddImage("Abyss/Assets/UI/HueCursor.png", "https://raw.githubusercontent.com/mvonwalk/splix-assets/main/Images-cursor.png")
         --
-        Library.Theme.Astolfo = Utility.AddImage("Abyss/Assets/UI/Astolfo.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Star_of_David.svg/1200px-Star_of_David.svg.png")
-        Library.Theme.Aiko = Utility.AddImage("Abyss/Assets/UI/Aiko.png", "https://cdn.pixabay.com/photo/2016/12/20/08/52/trident-1919913_960_720.png")
+        Library.Theme.Astolfo = Utility.AddImage("Abyss/Assets/UI/Astolfo.png", "https://i.imgur.com/T20cWY9.png")
+        Library.Theme.Aiko = Utility.AddImage("Abyss/Assets/UI/Aiko.png", "https://i.imgur.com/1gRIdko.png")
         Library.Theme.Rem = Utility.AddImage("Abyss/Assets/UI/Rem.png", "https://i.imgur.com/ykbRkhJ.png")
         Library.Theme.Violet = Utility.AddImage("Abyss/Assets/UI/Violet.png", "https://i.imgur.com/7B56w4a.png")
         Library.Theme.Asuka = Utility.AddImage("Abyss/Assets/UI/Asuka.png", "https://i.imgur.com/3hwztNM.png")
@@ -858,7 +858,7 @@ do
         --
         function Window.ChangeAnime(Name)
             Anime.Data = (
-                Name == "Ukraine Symbol" and Library.Theme.Astolfo or
+                Name == "Astolfo" and Library.Theme.Astolfo or
                 Name == "Aiko" and Library.Theme.Aiko or
                 Name == "Rem" and Library.Theme.Rem or
                 Name == "Violet" and Library.Theme.Violet or
