@@ -487,7 +487,7 @@ do
         Library.Theme.Saturation = Utility.AddImage("Abyss/Assets/UI/Saturation.png", "https://raw.githubusercontent.com/mvonwalk/Exterium/main/SaturationPicker.png")
         Library.Theme.SaturationCursor = Utility.AddImage("Abyss/Assets/UI/HueCursor.png", "https://raw.githubusercontent.com/mvonwalk/splix-assets/main/Images-cursor.png")
         --
-        Library.Theme.Astolfo = Utility.AddImage("Abyss/Assets/UI/Astolfo.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/National_Socialist_swastika.svg/1200px-National_Socialist_swastika.svg.png")
+        Library.Theme.IceCreamGirl = Utility.AddImage("Abyss/Assets/UI/IceCreamGirl.png", "IceCreamGirl.png")
         Library.Theme.Aiko = Utility.AddImage("Abyss/Assets/UI/Aiko.png", "https://i.imgur.com/1gRIdko.png")
         Library.Theme.Rem = Utility.AddImage("Abyss/Assets/UI/Rem.png", "https://i.imgur.com/ykbRkhJ.png")
         Library.Theme.Violet = Utility.AddImage("Abyss/Assets/UI/Violet.png", "https://i.imgur.com/7B56w4a.png")
@@ -858,7 +858,7 @@ do
         --
         function Window.ChangeAnime(Name)
             Anime.Data = (
-                Name == "Astolfo" and Library.Theme.Astolfo or
+                Name == "IceCreamGirl" and Library.Theme.IceCreamGirl or
                 Name == "Aiko" and Library.Theme.Aiko or
                 Name == "Rem" and Library.Theme.Rem or
                 Name == "Violet" and Library.Theme.Violet or
@@ -866,7 +866,7 @@ do
             )
 
             Anime.Size = (
-                Name == "Astolfo" and Vector2.new(412, 605) or
+                Name == "IceCreamGirl" and Vector2.new(412, 605) or
                 Name == "Aiko" and Vector2.new(390, 630) or
                 Name == "Rem" and Vector2.new(390, 639) or
                 Name == "Violet" and Vector2.new(1029 / 3, 1497 / 3) or
@@ -4098,8 +4098,8 @@ do
             
             ClickGUI:Dropdown({
                 Title = "Anime",
-                List = {"Astolfo", "Violet", "Rem", "Aiko", "Asuka"},
-                Default = "Astolfo",
+                List = {"IceCreamGirl", "Violet", "Rem", "Aiko", "Asuka"},
+                Default = "IceCreamGirl",
                 Callback = function(Name)
                     Window.ChangeAnime(Name)
                 end
